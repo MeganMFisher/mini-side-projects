@@ -1,0 +1,84 @@
+Answer each question in a written format
+
+1. What does semantic HTML mean?
+
+The definition of semantic is relating to meaning in language or logic. Semantic HTML is where you are applying tags that are related to the meaning of the content in your HTML. Some examples of sematic HTML tags are <img> <footer></footer>, <header></header>, and <nav></nav>. You know what the use of the tags are for because the tag relates to the meaning of the content within it. The header tags is where your header will go. 
+
+2. What is the box model?
+
+Every HTML element essentially has a box around it. This box includes the actual content of the box, the padding, border, and margin. Each part of the box around the HTML element has a specific purpose. The content is where your text and images appear. The padding is not visiable and adds additional space between the content and the border. The border is what goes around the content and padding. The margin adds additional space between the outside of the border an the surrounding HTML elements. The box model is especially helpful when planning the design and layout of the page. 
+
+3. What is the difference between IDs and Classes?
+
+There are a few main differences between IDs and Classes. IDs are unique. An element cannot have multiple IDs. You cannot use the same ID on multiple elements. IDs are for identifying a single element where as classes are able to be used for muliple elements. The same classes can be used on multiple elements. You can also use multiple classes on one element. Classes are not unique. 
+
+4. What does the z-index do?
+
+Z-index is used to overlap HTML elements. It creates an effect of the element on top being closer to you than the element below it. You bring an element to the front by using a higher z-index. It specifies what order the elements are going to be stacked together. 
+
+5. Summarize what the keyword 'this' is used for?
+
+The value of 'this' is determined by how a function is called. The context of 'this' can change through .call(), .apply() and .bind().
+
+
+6. What is a callback?
+
+A callback is a pattern of giving a function another function to invoke. It is a function that is passed to another function as a parameter, and the callback function is called inside the original function. 
+
+7. What is a closure?
+
+A technique where a function is returned from another function which makes code more modular. The inner function takes a snapshot when parent is invoked and knows what it's environment was. It only takes a snap shot if you create a new variable. Otherwise, it gets garbage collected. 
+
+8. How does prototype work?
+
+You create prototypes with constructor functions which creates a blueprint for all instances of the prototype. This saves memory because it is only created and exists once instead of function inside inner function that gets created and exists everytime 'new' is used. No matter how many objects you create functions are loaded only once into memory. You can append methods to the prototype, every single instance of that prototype will be able to use the appended method. All javascript objects have a prototype which is where they inherit their methods and properties.
+
+
+
+9. What is MVC?
+
+MVC stands for Model View Controller which is in object-oriented programming. This method consists of three parts. First, the model manages the behavior and data of the application domain, responds to request for information about the state and responds to the instructions to change state. Second, the view manages the display of information. Third, the controller interprets the mouse and keyboard inputs from the user informing the model and/or the view to change as appropriate. To simplify it the model is the data layer, the view is what is seen, and the controller is the bridge between model and view.
+
+10. What is the component lifecycle?
+
+Every component has several lifecycle methods in React which can be used to override and run code at certain times in the process. The methods with 'will' are called right before something happens. The methods with 'did' are called right after something happens. Some are called when an instance of a component is being created and inserted into the DOM. Some are called when a component is being re-rendered. ComponentWillUnmount is called when component is being removed from the DOM. 
+
+11. What is REST?
+
+REST stands for Representational State Transfer and is the most common agreed upon language for sharing data. JSON, URL(a means of communiction), body(how to send large amounts of data), headers, and method are all apart of REST. It uses the HTTP GET, POST, PUT, and DELETE methods explicitly. GET allows you to retrieve information, POST allows you to update the infomation, PUT is used to create new information, and DELETE is used to remove information. The CRUD methods, create read update delete, matches REST methods. REST allows you to upll data into your applications. 
+
+12. Name three ways of getting data from the URL using express.
+
+You can get data from a URL using request, response, and next.  
+
+
+create table users (
+id serial,
+name varchar(255),
+email varchar(255)
+)
+
+12. Given the Schema above, write the following four basic CRUD db queries using postgres syntax
+
+-Get all users:
+
+SELECT * 
+FROM users
+
+-Create a new user with the name of 'your name' and an email of 'fake@fake.com':
+
+INSERT INTO users
+(name, email)
+VALUES ('your name', 'fake@fake.com');
+
+-Update the newly created user's name to 'Bobby Boy':
+
+UPDATE users
+SET name = 'Bobby Boy'
+WHERE name = 'your name';
+
+
+-Delete the newly updated user:
+
+DELETE FROM users,
+WHERE name = 'Bobby Boy'
